@@ -1,0 +1,322 @@
+var shopping1 = [
+	{
+		title:'含节假日',
+		body:'北京直飞长滩岛6-8天自由行（8-9月降价/赠送...',
+		price:'3999'
+	},
+	{
+		title:'多重赠送',
+		body:'上海直飞塞班岛5/6天自由行（野马跑车自驾...',
+		price:'5780'
+	},
+	{
+		title:'超值特惠',
+		body:'上海直飞曼谷7天往返含税机票（含首晚酒店+...',
+		price:'1699'
+	},
+	{
+		title:'热卖爆款',
+		body:'[北京送签]日本单次旅游签证（高校第二件最高立减1...',
+		price:'249'
+	},
+	{
+		title:'人气推荐',
+		body:'台湾入台证（专业台湾/12小时急速出签/送10-100立...',
+		price:'55'
+	},
+	{
+		title:'顺丰包邮',
+		body:'[北京送签]菲律宾旅游签证（全国受理+顺丰回邮+可...',
+		price:'159'
+	}
+]
+var shopping2 = [
+	{
+		pic:'https://b2-q.mafengwo.net/s10/M00/07/1B/wKgBZ1jLUVWAWjqoAAleoYVBtuU57.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【暑期】深圳出发 德国+法国+意大利+瑞士12日跟团游（新天鹅堡 +入内参观巴黎卢浮宫+拒签全退）',
+		price:'9859'
+	},
+	{
+		pic:'https://b3-q.mafengwo.net/s10/M00/09/8A/wKgBZ1lMhW-ARtU9AA-wYKowFSM64.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【可预售+可包车+中文司导】上海出发新西兰11日南北岛自驾之旅赠送新西兰电话卡+ 转换插头+ 旅行纪念册（可定制行程+个人旅行签证+萤火虫洞+霍比屯+地热公园+米尔福德峡湾、可选跳伞+格林诺奇骑行+天际缆车&晚餐）',
+		price:'15300'
+	},
+	{
+		pic:'https://a3-q.mafengwo.net/s10/M00/F0/84/wKgBZ1iwyMmAGodtAAQzUcDbAvc87.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【秒杀】北京直飞美国塞班岛5-7天半自由行（直飞航班+赠接送机+送北部环岛游+军舰岛游+免签海岛+爆款）',
+		price:'4999'
+	},
+	{
+		pic:'https://a3-q.mafengwo.net/s10/M00/48/12/wKgBZ1kmn0CAQU5oAAEdGxwo05A21.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【暑期/国庆】广州往返埃及10天7晚半自助游（全程五星酒店+金字塔+开罗+卢克索+红海+赠299元精美相册书）',
+		price:'4588'
+	},
+	{
+		pic:'https://c3-q.mafengwo.net/s10/M00/7E/5F/wKgBZ1ll8iaAPRT6AAKFpe60GHg80.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【暑期/国庆】广州直飞土耳其12天9晚半自助游（赠送签证+全程车载WiFi+全程五星特色民宿+番红花城+卡帕多其亚）',
+		price:'5788'
+	},
+	{
+		pic:'https://b2-q.mafengwo.net/s10/M00/3B/4A/wKgBZ1i9HW2AX2xiAAExckKK3RQ88.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'北京直飞俄罗斯8天6晚（一价全含+莫斯科河游船+艾尔米塔什博物馆+彼得夏宫花园+赠送保险）',
+		price:'11299'
+	},
+	{
+		pic:'https://n2-q.mafengwo.net/s10/M00/66/F2/wKgBZ1kiWOeAC1QeAAJflUP7ZQE50.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'上海/南京/杭州 出发 德国+法国+意大利+瑞士+欧洲四国德法意瑞12天品质跟团游 （新天鹅堡+少女峰+金色山口+卢浮宫+凡尔赛+全程四星酒店+纯玩无自费）',
+		price:'12300'
+	},
+	{
+		pic:'https://n2-q.mafengwo.net/s9/M00/24/28/wKgBs1hSBjWAR1VAAAUmcKOer3814.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'成都希腊圣托尼里+米克诺斯9天半自由行（2人起定制专属行程/圣岛4天3晚优选悬崖酒店/米岛3天2晚/全程8段专人接送/专人代办签证/一站搞定/全程路书）',
+		price:'13500'
+	}
+]
+var shopping3 = [
+	{
+		pic:'https://c4-q.mafengwo.net/s10/M00/9A/4C/wKgBZ1l3KBuAaEYMAAA4zUwdznU32.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【自由定制+中文导游+24H管家服务+特色出游】帕劳5/6日定制游（行程任调+酒店任选）全国出发随时可走',
+		price:'4799'
+	},
+	{
+		pic:'https://c1-q.mafengwo.net/s10/M00/2A/6F/wKgBZ1lSJ4WAJ_JpAAEIZnIVQTU01.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【金沙无边泳池+亲子家庭+专车专导+24H旅行管家】新加坡6日亲子定制（环球影城+SEA海洋馆+夜间野生动物园+随心DIY）',
+		price:'12800'
+	},
+	{
+		pic:'https://a2-q.mafengwo.net/s10/M00/4F/4C/wKgBZ1k_ZL-AX0QDAEUeGl8LvKs80.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【关西经典深度游＋最专业的定制服务】日本 7天 定制自由行 探寻原汁原味的日本  (大阪-京都-奈良）全国出发',
+		price:'7480'
+	},
+	{
+		pic:'https://b2-q.mafengwo.net/s10/M00/40/E8/wKgBZ1k_UCCAStOzAAXoEUTvrpE62.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【经典东京+关西】免费私人定制日本东京+京都+大阪7日超级自由行（京都茶道体验课+东京浅草寺+大阪购物美食游等） 全国出发+APP全程护航 编号1299',
+		price:'6999'
+	},
+	{
+		pic:'https://b4-q.mafengwo.net/s9/M00/1C/39/wKgBs1g5GKqAf_qEAAC4pCqOefw56.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【私人订制+APP全程护航】澳大利亚 11日深度自由行（悉尼+墨尔本+菲利普岛+大洋路+莫宁顿半岛）全国出发 编号1919',
+		price:'13999'
+	},
+	{
+		pic:'https://b1-q.mafengwo.net/s10/M00/43/78/wKgBZ1iIW3KAd2L7AAKn_YPLhyM28.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【免费私人定制+APP全程护航】一价全包法意11日超级自由行 （巴黎+米兰+威尼斯+佛罗伦萨+罗马+梵蒂冈）全国出发编号1133',
+		price:'12999'
+	},
+	{
+		pic:'https://n1-q.mafengwo.net/s10/M00/20/A2/wKgBZ1lvCuuALQ24AAjdgLDutLY60.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【冰岛奇幻探秘之旅+浪漫极光+专业定制路线】冰岛9天定制自由行 探寻北极圈极光的秘密 全国出发（冰岛南部半岛-雷克雅未克-冰岛西部区-斯德哥尔摩）',
+		price:'26880'
+	},
+	{
+		pic:'https://c4-q.mafengwo.net/s10/M00/6E/45/wKgBZ1k3qSKAaY6ZAABdOajjEfo98.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'【北美深度游+亲子首选+随你喜欢，才是真正的定制】美国 14天 东海岸的艺术之旅 全国出发 （纽约-华盛顿-费城-波士顿-白山国家森林公园）',
+		price:'20980'
+	}
+]
+var shopping4 = [
+	{
+		pic:'https://a4-q.mafengwo.net/s10/M00/8B/B3/wKgBZ1lfWbuAeNINAAYaNoglEfA169.png?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'重庆直飞普吉6天5晚/7天5晚自由行（赠机场专车接送+赠WiFi+酒店自助早餐+可任意搭配安迪御用酒店-INIALA Beach House+可代订幻多奇乐园套餐门票）',
+		price:'2780'
+	},
+	{
+		pic:'https://b4-q.mafengwo.net/s9/M00/3C/45/wKgBs1gZhBGAJxL0AAFSCxv15GU57.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'深圳直飞泰国普吉岛6天4晚经典游（全国联运+绝无自费+跳岛游+全程当五酒店+升级一晚五星一岛一酒店+歌舞晚宴+蓝钻岛+人妖秀+精油SPA+免费浮潜+蒸汽浴）',
+		price:'2760'
+	},
+	{
+		pic:'https://n1-q.mafengwo.net/s10/M00/61/C5/wKgBZ1jUl7OARZnuAAKYZYJPvf095.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'普吉岛送机  普吉全岛酒店到机场（ 24小时专车 ，中文客服）',
+		price:'89'
+	},
+	{
+		pic:'https://c1-q.mafengwo.net/s10/M00/A4/70/wKgBZ1lLhaKARnNxAANt4Pn5ydE77.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'北京直飞泰国普吉岛7天5晚自由行（赠专车接送机+出境旅游意外险+航空延误险+多种酒店任君选）',
+		price:'4580'
+	},
+	{
+		pic:'https://c1-q.mafengwo.net/s10/M00/B9/7B/wKgBZ1lVvNeAUYH5AANj1KtaMsE87.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'普吉岛 皇帝岛珊瑚岛巨型豪华帆船一日游（两位专属中文导游+全岛免费接送+硬件升级服务暖心）',
+		price:'359'
+	},
+	{
+		pic:'https://n3-q.mafengwo.net/s10/M00/85/24/wKgBZ1kk--KAPhwDAAA8JOaIdXA48.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'泰国 普吉岛送机 全岛酒店至机场专车送机服务',
+		price:'99'
+	},
+	{
+		pic:'https://a1-q.mafengwo.net/s10/M00/C6/AB/wKgBZ1lTfvSAR8nuAAWnfbz08Qs671.png?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'上海直飞普吉岛6-7天自由行（可选近江西冷/班赞高品质酒店+15元换购拼车接机+含国庆班期+可延住末晚酒店）',
+		price:'1999'
+	},
+	{
+		pic:'https://b4-q.mafengwo.net/s10/M00/02/B6/wKgBZ1mINu-AVBRiAABhWUu1vls71.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'上海直飞泰国普吉岛6-7天自由行（瓜分千万现金+最高立减5000+部分第二人下单享5折优惠+拒绝低价+在乎品质+可售单机票+上航/吉祥/春秋三大航司任选+热卖酒店任挑+两大超值赠送WiFi-happy卡/攻略）',
+		price:'2499'
+	}
+]
+var shopping5 = [
+	{
+		pic:'https://b2-q.mafengwo.net/s10/M00/62/C5/wKgBZ1lXSQuAG080AAW5yrXxNcI20.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'深圳直飞清迈5-6天自由行(出行预约写游记领200-500优惠券+提前30天预订立减100/人+全程高档酒店+往返含税机票+赠接送机+20kg往返行李托运+丰盛酒店早餐)',
+		price:'2590'
+	},
+	{
+		pic:'https://n1-q.mafengwo.net/s10/M00/97/B3/wKgBZ1j_GHiAPiK3AAd99lF8GoI31.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'限时特惠 清迈 清莱白庙黑庙蓝庙一日游（定制VIP线路/摄影师跟拍/艾美5星自助餐）',
+		price:'158'
+	},
+	{
+		pic:'https://n4-q.mafengwo.net/s10/M00/D1/E1/wKgBZ1h8lHKAa8amAAxvkZXgIOo28.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'清迈机场接 / 送机 24小时专车接送（赠免税店代金券+无夜间附加费）',
+		price:'28'
+	},
+	{
+		pic:'https://c3-q.mafengwo.net/s10/M00/6B/42/wKgBZ1jbdq6AQG-dAA0Y2ADFxfA09.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'清迈 碧曼缇Spa 泰式按摩体验（奢享SPA+酒店接送+可免费送机）',
+		price:'79'
+	},
+	{
+		pic:'https://c2-q.mafengwo.net/s10/M00/9A/E8/wKgBZ1jCcPCAR3Q7AAJzLUkWrCk45.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'成都直飞清迈往返5-6天含税机票（川航白班机+托运）',
+		price:'1450'
+	},
+	{
+		pic:'https://n3-q.mafengwo.net/s9/M00/3F/6B/wKgBs1gXBXyAAD1FAAG32P6M38416.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'限时特惠 清迈 清莱白庙黑庙蓝庙一日游中文导游（艾美五星自助餐+豪华奔驰大巴/9座VIP保姆车）',
+		price:'135'
+	},
+	{
+		pic:'https://c4-q.mafengwo.net/s9/M00/D3/DF/wKgBs1hSQB2AAv7YAAFCD-zbUAY68.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'清迈酒店 到 清迈机场 (大车小车同价)',
+		price:'39'
+	},
+	{
+		pic:'https://a4-q.mafengwo.net/s10/M00/0D/20/wKgBZ1iqrB6AIJs5AAdpemS-jlU51.jpeg?imageMogr2%2Fthumbnail%2F%21210x140r%2Fgravity%2FCenter%2Fcrop%2F%21210x140%2Fquality%2F90',
+		content:'清迈 丛林飞跃 丛林飞鹰Eagle Track35平台+午餐半日游（多平台可选）',
+		price:'249'
+	}
+]
+var shopping6 = [
+	{
+		title:'马尔代夫',
+		name:'机+酒',
+		pic:'https://b1-q.mafengwo.net/s10/M00/0E/C8/wKgBZ1jczjaAPKQaAAfeKo2W4C481.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'上海出发马尔代夫芙拉瓦丽岛6-7天自由行（下单最高立减3000元+一价全包+海底餐厅+私人泳池+赠保险/蜜月礼包+1对1服务）',
+		price:'13650'
+	},
+	{
+		title:'塞班岛',
+		name:'机+酒',
+		pic:'https://b3-q.mafengwo.net/s10/M00/3C/76/wKgBZ1j1um-APW_PAHAqKoUjT0E939.gif?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'上海直飞塞班岛5天4晚/6天5晚自由行(赠环岛游+军舰岛+丛林探险+接送机+双重套餐不同选择+含税费1550元+导游小费+中文接送机 )',
+		price:'4180'
+	},
+	{
+		title:'毛里求斯',
+		name:'机+酒',
+		pic:'https://c3-q.mafengwo.net/s8/M00/ED/43/wKgBpVVxeqWAEE6JAALahTfrNys00.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'上海直飞毛里求斯8天5晚自由行（最高立减5000+瓜分千万现金+下单即送专享礼包+东部酒店 +赠送北部/南部经典一日游+赠接送机+毛里求斯电话卡+赠送高端旅游险）',
+		price:'7903'
+	},
+	{
+		title:'大阪',
+		name:'特价机票',
+		pic:'https://c2-q.mafengwo.net/s9/M00/DA/EC/wKgBs1eYeH6ACjF-AAFQYDemW0w06.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'上海直飞日本大阪2-10天往返含税机票（早去晚回/午去午回航班+含国庆班期）',
+		price:'1099'
+	},
+	{
+		title:'曼谷',
+		name:'特价机票',
+		pic:'https://b3-q.mafengwo.net/s9/M00/D1/2C/wKgBs1eXD1yAHH2AAAQMUMpvoyo02.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'上海直飞曼谷7天往返含税机票（含首晚酒店+泰国人气目的地+含国庆班期）',
+		price:'1699'
+	},
+	{
+		title:'杭州',
+		name:'酒店套餐',
+		pic:'https://p1-q.mafengwo.net/s10/M00/29/E8/wKgBZ1ib5gOATDvHAAGAI4NkQ_w70.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'杭州 宋城千古情酒店·西湖店住宿1晚（套餐赠单人/双人/三人宋城门票+贵宾席演出票',
+		price:'468'
+	},
+	{
+		title:'三亚',
+		name:'酒店套餐',
+		pic:'https://n3-q.mafengwo.net/s10/M00/33/45/wKgBZ1kXD-mAdHs3AAP3SmdTTGQ62.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'三亚蜈支洲岛珊瑚酒店木屋超值套餐（接送/机+免费自驾租车+VIP快速登岛）',
+		price:'869'
+	},
+	{
+		title:'台湾',
+		name:'签证',
+		pic:'https://c4-q.mafengwo.net/s10/M00/DB/95/wKgBZ1luzBiAEVRSAAJZn66QXs497.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'台湾入台证（中青旅直营/限时立减100元/全国办理量第一/每年办理超过50万人次/台旅会授权入台资质/全国办理/资料简单速度快/免填表/可加急/免财力/免联系人）',
+		price:'50'
+	},
+	{
+		title:'马来西亚',
+		name:'签证',
+		pic:'https://b4-q.mafengwo.net/s10/M00/BD/05/wKgBZ1lTcPGAPjUuAAOz4M-Vpcc63.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'[全国受理 电子签] 马来西亚旅游（1小时特急出签服务+电子版资料+无需邮寄+可拒签退款)',
+		price:'168'
+	},
+	{
+		title:'巴厘岛',
+		name:'机+酒',
+		pic:'https://b1-q.mafengwo.net/s10/M00/6B/D7/wKgBZ1jtxY6ACi8TAAS9p5GaS6o04.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'上海往返巴厘岛5-7天自由行（赠送100-500蓝途专享优惠券+全国联运+阿雅娜/穆丽雅酒店任选+特定套餐赠送SPA/下午茶+免费申请蜜月布置）',
+		price:'3999'
+	},
+	{
+		title:'帕劳',
+		name:'机+酒',
+		pic:'https://c3-q.mafengwo.net/s10/M00/8E/DA/wKgBZ1lDnWaAHjhKAB3LKaX2m2Y058.gif?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'香港直飞帕劳5/6天自由行(全国联运+赠100-500优惠券+爱游号5年口碑小团出海+接送机+电话卡+航班延误赔付+电子攻略+提供租水下相机)',
+		price:'4560'
+	},
+	{
+		title:'马尔代夫',
+		name:'机+酒',
+		pic:'https://a1-q.mafengwo.net/s10/M00/62/4A/wKgBZ1lfJ1-ASmbKAATb1tpumHQ07.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'上海往返马尔代夫戴加利岛6-7天自由行（蜂抢千元优惠+新岛开业+免费WiFi+蜜月大礼包+拖尾沙滩+内飞上岛+早晚餐）',
+		price:'9980'
+	},
+	{
+		title:'东京',
+		name:'特价机票',
+		pic:'https://n3-q.mafengwo.net/s10/M00/EF/97/wKgBZ1jwmVmABdXHABhI-JXYRyA438.gif?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'北京直飞东京4-30天往返含税机票（含行李托运/可办签证/拒签全退/全年可选）',
+		price:'1799'
+	},
+	{
+		title:'东京',
+		name:'特价机票',
+		pic:'https://b2-q.mafengwo.net/s10/M00/39/86/wKgBZ1kP_SWAfeGVAAbFnAq6Zp061.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'上海直飞日本东京5-6天往返含税机票(捷星航空/每人免费27公斤行李额/可代办签证/赠送日上免税店打折券)',
+		price:'1199'
+	},
+	{
+		title:'上海',
+		name:'酒店套餐',
+		pic:'https://b1-q.mafengwo.net/s10/M00/72/07/wKgBZ1h-GR6ABb_4ACB8QWAYaBI49.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'上海柏思特酒店2天1晚自由行（赠上海迪士尼乐园门票2张＋含往返迪士尼接驳车（需提前预约））',
+		price:'528'
+	},
+	{
+		title:'卡帕莱岛',
+		name:'酒店套餐',
+		pic:'https://c4-q.mafengwo.net/s9/M00/26/22/wKgBs1fXpKiAEpjaAACo0tfSZVs35.jpeg?imageMogr2%2Fthumbnail%2F%21240x180r%2Fgravity%2FCenter%2Fcrop%2F%21240x180%2Fquality%2F90',
+		content:'【全年控房  快速确认】仙本那卡帕莱KapalaiResort别墅水屋住宿 可租用Gopro相机（赠送机场接送+一日三餐＋浮潜/深潜套餐）',
+		price:'3080'
+	}
+]
+export {
+	shopping1,
+	shopping2,
+	shopping3,
+	shopping4,
+	shopping5,
+	shopping6
+}
