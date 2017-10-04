@@ -18,3 +18,5 @@ Vue2.0+vue-router+Vuex+axios实现的webapp
 Vue2.0+vue-router+Vuex+mockjs实现的webapp
 
 5、微信小程序
+
+微信小程序豆瓣电影
