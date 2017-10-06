@@ -19,4 +19,4 @@ Vue2.0+vue-router+Vuex+mockjs实现的webapp
 
 5、微信小程序
 
-微信小程序豆瓣电影
+微信小程序豆瓣电影啊
